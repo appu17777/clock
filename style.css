@@ -1,0 +1,45 @@
+.container {
+    border: 25px solid black;
+    width: 95%;
+    height: 100vh;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digital-clock {
+
+    width: fit-content;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 3px;
+}
+.digital-clock h1 {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+    .digital-clock #bar1,#bar2,#bar3 {
+    display: none;
+    }
+    .digital-clock {
+        text-align: center;
+    }
+    .digital-clock h1 {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .digital-clock #bar1,#bar2,#bar3 {
+        display: none;
+    }
+   .digital-clock h1 {
+    display: block;
+   }
+}
